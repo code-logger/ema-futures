@@ -7,4 +7,4 @@ pip install requirements.txt
 
 
 ## Running 
-python main.py
+python app.py
