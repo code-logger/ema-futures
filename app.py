@@ -153,14 +153,14 @@ def main():
         if(ema50 > ema200 and last_ema50 and not buy):
             if(last_ema50 < last_ema200):
                 print("buy it")
-                place_order("BUY",price)
+                place_order(symbol,"BUY")
                 buy = True
                 sell = False
                 
 
         if(ema200  > ema50 and last_ema50 and not sell):
             if(last_ema200 < last_ema50):
-                place_order("SELL",price)
+                place_order(symbol,"SELL")
                 sell = True
                 buy = False
 
