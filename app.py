@@ -55,7 +55,7 @@ def check_decimals(symbol):
     return decimal
 
 
-def get_quan():
+def get_quan(symbol):
 
     res = client.get_symbol_ticker(symbol=symbol)
     value = float(res['price'])
