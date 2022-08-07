@@ -1,11 +1,16 @@
 import time 
 import sys
-
+import math
 from binance.client import Client 
 from config import api_key , secret_key,symbol,interval,quantity,short_ema,long_ema,leverage
 limit = "200"
 
 client  = Client(api_key, secret_key)
+
+def round_down(num,digits):
+        factor = 10.0 ** digits
+        return math.floor(num * factor) / factor
+
 
 def ema(s, n):
     """
