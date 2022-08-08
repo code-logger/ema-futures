@@ -149,7 +149,7 @@ def main():
     print("Looking for new Trades....");print("Watching ",symbol)#print("buy",buy)"""
     while True:
         data  = get_data()
-        price = get_quan()
+        price = get_quan(symbol)
         #print(price)
         ema50 =ema(data,short_ema)[-1]
         ema200 = ema(data, long_ema)[-1]
